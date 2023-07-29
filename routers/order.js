@@ -35,7 +35,7 @@ router.post('/neworder', async (req, res) => {
 
     } catch (error) {
         console.log(error);
-        return res.status(500).json({ success: false, message: "some Error Occured" })
+        return res.status(500).json({ success: false, message: "some Error Occured From Server" })
     }
 })
 
