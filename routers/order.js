@@ -65,7 +65,7 @@ router.patch('/editorder/:id',verifyUser, async(req, res) => {
         await Order.findByIdAndUpdate(req.params.id, status)
         return res.status(200).json({ success: true, message: "Order Updated" });
     } catch (error) {
-        return res.status(500).json({ success: false, message: "Some Error Occured" })
+        return res.status(500).json({ success: false, message: "Some error Occured" })
     }
 })
 

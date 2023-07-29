@@ -8,7 +8,7 @@ require('./db/connection')
 app.use(express.json())
 app.use(cors())
 
-app.use('/api/', require('./routers/order'))
+app.use('/api', require('./routers/order'))
 app.get('/', (req,res)=>{
     return res.send('server started')
 })
